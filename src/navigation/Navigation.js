@@ -8,8 +8,6 @@ const Stack = createStackNavigator()
 
 export const Navigation = () => {
 
-    const { isAuthenticated } = useSelector(state => state.user)
-
     return (
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Inicio" screenOptions={{ headerShown: false }}>

@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-    users: [],
+    Campañas: [],
     seller: null,
 }
 
@@ -9,8 +9,11 @@ const userSlice = createSlice({
     name: "user",
     initialState,
     reducers: {
-        setEthnicitys(state, { payload }) {
-            state.ethnicitys = payload
+        setCampañas(state, { payload }) {
+            state.Campañas = payload
+        },
+        getCampañas() {
+
         }
     }
 })
