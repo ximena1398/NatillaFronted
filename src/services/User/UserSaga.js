@@ -5,6 +5,7 @@ import Api from '../../common/api/Api'
 
 function* getCampañas(){
     const camp = yield Api.get('/Campana/all')
+    yield put(userActions.setCampañas(camp.payload))
     console.log(camp.payload)
 }
 
